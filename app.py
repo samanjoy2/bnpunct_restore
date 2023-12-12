@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import pipeline
+import torch
 
 # Load the text-to-text generation pipeline
 pipe = pipeline("text2text-generation", model="samanjoy2/bnpunct_banglat5_seq2seq_finetuned", device=0)
