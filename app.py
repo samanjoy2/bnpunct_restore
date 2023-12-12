@@ -8,7 +8,7 @@ pipe = pipeline("text2text-generation", model="samanjoy2/bnpunct_banglat5_seq2se
 st.title("Bangla Punctutation Restoration")
 
 # User input for text generation
-input_text = st.text_area("Enter Bangla text for restoration:", max_chars=450)
+input_text = st.text_area("Enter Bangla text for restoration:", max_chars=200)
 
 if st.button("Restore Punctuations"):
     if input_text:
